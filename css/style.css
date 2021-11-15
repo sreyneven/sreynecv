@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.logo{
+    height: 70px;
+    width: 70px;
+    font-size: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+ul li a{
+    margin: 20px;
+    font-size: 23px;
+    text-decoration: none;
+}
+ul li a:hover{
+        text-decoration: underline;
+        color: aqua;
+        transition: 1.5s;
+}
+.active{
+    background: cyan;
+    
+}
+span{
+    color: cyan;
+}
+p{
+    font-size: 23px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+h1{
+    font-size: 50px;
+}
+.container .text{
+    width: 70%;
+}
+button{
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    background: rgb(87, 238, 238);
+    outline: none;
+    margin:20px;
+    border: none;
+    font-size: 20px;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: cyan;
+}
+.footer .num{
+    display: flex;
+    font-size: 17px;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.socail li{
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-left: 14px;
+}
+.socail img:hover{
+    color: rgb(82, 255, 246);
+    cursor: pointer;
+    transition: 1s;
+}
+/* about */
+.main{
+    text-align: center;
+    padding-top: 40px;
+}
+.col-4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.card{
+    border-top: 2px solid cyan;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.card:hover{
+    color: black;
+    font-size: 20px;
+   
+}
+.card-l .card img{
+    margin: 10px;
+}
+h2{
+    padding: 10px;
+}
+.card p{
+    font-size: 17px;
+}
+.correct {
+    display: flex;
+    align-items: center;
+}
+.icon-skill{
+    display: flex;
+    justify-content: center;
+}
+.icon-skill .icons-group{
+    margin: 10px;
+}
+.icon-skill .icons-group i{
+    font-size: 45px;
+    color: cyan;
+}
+.main-black{
+    color: #fff;
+    background: #000;
+    padding: 20px;
+}
+/* contact */
+.container-contact{
+    background: cyan;
+    border-radius: 20px;
+    margin: 50px;
+}
+.form-group{
+    padding:10px;
+}
+.form-control{
+    width: 100%;
+    padding: 13px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+.btn{
+    width: 100%;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    margin: 0;
+}
+::placeholder{
+    color: rgb(15, 15, 15);
+}
+.two-input{
+    display: flex;
+    justify-content: center;
+}
+.ml{
+    margin-left: 5px;
+}
+.ml-2{
+    margin-left: 30px;
+}
+.no-resize{
+    resize: none;
+}
+.map{
+    padding: 10px;
+}
+@media screen and (max-width:1024px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .text{
+        text-align: center;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .col-4{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:615px){
+    * p{
+        text-align: center;
+        font-size: 18px;
+        margin: 10px;
+    }
+    .p p{
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+    }
+    .logo{
+        display: none;
+    }
+    .col-4{
+        display: grid;
+        grid-template-columns: 1fr;
+    } 
+    .ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ul li{
+        padding: 10px;
+    }
+}
+
